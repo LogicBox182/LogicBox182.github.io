@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Villa Agency Modern</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+}
+
+.hero .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+}
+
+.hero h2 {
+  color:#fff;
+  font-size:48px;
+}
+
+/* Overlay */
+.hero::after {
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  top:0;
+  left:0;
+}
+
+.hero .container {
+  position:relative;
+  z-index:2;
+}
+
+/* Cards */
+.property-card {
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.property-card:hover {
+  transform:translateY(-10px) scale(1.02);
+}
+
+/* Buttons */
+.btn-modern {
+  background:#ff5a3c;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:30px;
+  transition:0.3s;
+}
+
+.btn-modern:hover {
+  transform:translateY(-3px);
+}
+
+/* Section spacing */
+section {
+  padding:80px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide" style="background-image:url('assets/images/banner-01.jpg')">
+      <div class="container">
+        <h2 data-aos="fade-up">Find Your Dream Villa</h2>
+      </div>
+    </div>
+
+    <div class="swiper-slide" style="background-image:url('assets/images/banner-02.jpg')">
+      <div class="container">
+        <h2 data-aos="fade-up">Luxury Living Starts Here</h2>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section>
+<div class="container">
+<div class="row">
+
+<div class="col-lg-6" data-aos="fade-right">
+<img src="assets/images/featured.jpg" class="img-fluid rounded">
+</div>
+
+<div class="col-lg-6" data-aos="fade-left">
+<h2>Best Apartments & Sea View</h2>
+<p>Modern properties with premium features and stunning views.</p>
+<a href="#" class="btn-modern">Explore</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROPERTIES -->
+<section>
+<div class="container">
+
+<div class="text-center mb-5" data-aos="fade-down">
+<h2>Featured Properties</h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4" data-aos="zoom-in">
+<div class="property-card">
+<img src="assets/images/property-01.jpg" class="img-fluid">
+<div class="p-3">
+<h5>$2,264,000</h5>
+<p>Luxury Villa</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+<div class="property-card">
+<img src="assets/images/property-02.jpg" class="img-fluid">
+<div class="p-3">
+<h5>$1,180,000</h5>
+<p>Modern House</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+<div class="property-card">
+<img src="assets/images/property-03.jpg" class="img-fluid">
+<div class="p-3">
+<h5>$1,460,000</h5>
+<p>Beach Villa</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- VIDEO -->
+<section>
+<div class="container text-center">
+
+<div data-aos="zoom-in">
+<img src="assets/images/video-frame.jpg" class="img-fluid rounded">
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+<div class="container">
+
+<div class="text-center mb-4" data-aos="fade-down">
+<h2>Contact Us</h2>
+</div>
+
+<form class="row g-3" data-aos="fade-up">
+<div class="col-md-6">
+<input class="form-control" placeholder="Name">
+</div>
+
+<div class="col-md-6">
+<input class="form-control" placeholder="Email">
+</div>
+
+<div class="col-12">
+<textarea class="form-control" placeholder="Message"></textarea>
+</div>
+
+<div class="col-12 text-center">
+<button class="btn-modern">Send</button>
+</div>
+</form>
+
+</div>
+</section>
+
+<!-- JS -->
+
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+new Swiper('.swiper', {
+  loop:true,
+  autoplay:{ delay:3000 },
+});
+</script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration:1000,
+  once:true
+});
+</script>
+
+</body>
+</html>
