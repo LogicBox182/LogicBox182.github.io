@@ -1021,7 +1021,9 @@ Video Style
   line-height: 52px;
   /*color: #f35525;*/
   color: #ada425;
-  outline: 15px solid rgba(254, 85, 37, 0.5);
+  /*outline: 15px solid rgba(254, 85, 37, 0.5);*/
+  /*outline: 15px solid rgb(247 240 0 / 50%);*/
+  outline: 15px solid rgb(143 139 0 / 50%);
   font-size: 18px;
 }
 
