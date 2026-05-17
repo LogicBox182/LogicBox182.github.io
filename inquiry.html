@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="assets/css/inquiry.css">
+    
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/inquiry.css">
+    <link rel="stylesheet" href="assets/css/social.css"> 
 <!--
 
 TemplateMo 591 villa agency
@@ -52,15 +54,17 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-8 col-md-8">
           <ul class="info">
             <li><i class="fa fa-envelope"></i> info@company.com</li>
-            <li><i class="fa fa-map"></i> Usa river, Arusha 45342</li>
+            <li><i class="fa fa-map"></i> kaloleni, Arusha 11</li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">
           <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="#"><img src="assets/images/rednote.png" 
+          alt="RedNote"
+          style="width:20px;height:20px;color: #fff;border-radius: 50%;
+          background-color: white;"></a></li>
           </ul>
         </div>
       </div>
@@ -84,6 +88,7 @@ https://templatemo.com/tm-591-villa-agency
                     <ul class="nav">
                       <li><a href="index.html">Home</a></li>
                       <li><a href="properties.html">Safaris</a></li>
+                      <li><a href="blog.html">Blog</a></li>
                       <li><a href="property-details.html" class="active">Book Now</a></li>
                       <li><a href="contact.html">Contact Us</a></li>
                       <!--<li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
@@ -99,6 +104,62 @@ https://templatemo.com/tm-591-villa-agency
   </header>
   <!-- ***** Header Area End ***** -->
 
+  <!-- start of social -->
+  <div id="popUp">
+    <div id="close" class="close"><i class="fa fa-times"></i></div>
+
+    <div class="popupitem">
+      <div class="itemImg">
+        <img class="popimg" src="assets/images/Wakati_Safaris3.png" alt="" style="max-width: 150px;">
+        
+      </div>
+    </div>
+    <div class="popupitem">
+      <div class="itemP">
+        <img src="assets/images/phonecallB.png" alt="" style="max-width: 32px;">
+        <h6>+255666490496 </h6>
+      </div>
+      <p>Direct calls</p>
+    </div>
+    <div class="popupitem">
+      <div class="itemP">
+        <img src="assets/images/whatsapp.png" alt="" style="max-width: 32px;">
+        <h6>+25542071291 </h6>
+      </div>
+      <p>Whatsapp</p>
+    </div>
+    <div class="popupitem">
+      <div class="itemP">
+        <img src="assets/images/wechatB.png" alt="" style="max-width: 32px;">
+        <h6>+25542071291 </h6>
+      </div>
+      <p>Wechat</p>
+    </div>
+    <div class="popupitem">
+      <div class="itemP">
+        <img src="assets/images/mailB.png" alt="" style="max-width: 32px;">
+        <h6>info@wakatisafaris.com</h6>
+      </div>
+      <p>Email</p>
+    </div>
+
+    <div class="popupitem">
+      <div class="itemP">
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="#"><img src="assets/images/rednote.png" 
+          alt="RedNote"
+          style="width:20px;height:20px;"></a></li>
+      </ul>
+    </div>
+    </div>
+
+  </div>
+  <!-- <div id="plus"><span>NEW<br>&nbsp;&nbsp;<i class="fa fa-plus"></i></span></div> -->
+  <div id="plus"><span> <img src="assets/images/phone-icon.png" alt="safari Logo" class="logo-img"> </span></div>
+  <!-- end of social -->
+
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
@@ -110,7 +171,7 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
-  <div class="single-property section">
+  <!-- <div class="single-property section"> -->
     <div class="container">
       <div class="row">
 
@@ -303,7 +364,7 @@ https://templatemo.com/tm-591-villa-agency
 
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
   <footer>
     <div class="container">
@@ -325,6 +386,20 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  <script> 
+
+$("#plus").hover(function() {
+  $("#popUp").css("margin-left", "0px");
+  $("#plus").css("margin-left", "-425px");
+});
+
+$("#close").click(function() {
+  $("#popUp").css("margin-left", "-425px");
+  $("#plus").css("margin-left", "0px");
+});
+  //end of social
+  </script>
 
   </body>
 </html>
