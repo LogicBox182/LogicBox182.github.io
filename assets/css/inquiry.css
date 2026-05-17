@@ -22,9 +22,14 @@
 
 /* Top image styling */
 .form-image {
-    margin-bottom: 3rem; /* mb-12 */
-    width: 100%;
+    /*margin-bottom: 3rem;*/ /* mb-12 */
+    /*width: 100%;
+    border-radius: 0.5rem;*/
+    width: 150px;
+    padding-bottom: 20px;
     border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Header section for title and description */

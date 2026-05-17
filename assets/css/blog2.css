@@ -1,0 +1,78 @@
+.banner-content h1 {
+    z-index: 99;
+}
+
+.head-bottom-meta .meta-left p {
+    z-index: 99;
+}
+
+body .text-white {
+    position: relative;
+    color: #fff !important;
+    z-index: 99;
+}
+
+.user-meta p{
+    position: relative;
+    color: #fff !important;
+    z-index: 99;
+}
+
+.single-cat img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover;
+}
+
+.head-bottom-meta .user-img {
+    height: 40px;
+    width: 40px;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.align-self-center {
+    padding: 0px 20px;
+}
+
+.single-travel img {
+    width: 500px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.single-cat .date {
+    background-color: #9A7F54;
+}
+
+.single-travel .dates {
+    background: #9A7F54;
+}
+
+.single-travel .dates p {
+    color: white;
+}
+
+/*.p1-gradient-bg, .primary-btn, .footer-social a:hover, .single-footer-widget .bb-btn, .generic-banner, .tags ul a:hover, .overlay, .about_widget button:hover, .tag_widget ul li a:hover, .top-section-area {
+    background-image: -moz-linear-gradient(45deg, #85751a 0%, #deff84 100%) !important;
+    background-image: -webkit-linear-gradient(45deg, #f9fc62 0%, #e4ff84 100%) !important;
+    background-image: -ms-linear-gradient(45deg, #fcd362 0%, #917f44 100%) !important;
+}*/
+
+.p1-gradient-bg, .primary-btn, .footer-social a:hover, .single-footer-widget .bb-btn, .generic-banner, .tags ul a:hover, .overlay, .about_widget button:hover, .tag_widget ul li a:hover, .top-section-area {
+    background-image: -moz-linear-gradient(45deg, #85751a 0%, #7e6b03 100%) !important;
+    background-image: -webkit-linear-gradient(45deg, #a88523 0%, #f9fc62 100%) !important;
+    background-image: -ms-linear-gradient(45deg, #fcd362 0%, #917f44 100%) !important;
+}
+
+i {
+    color: #fff;
+}
